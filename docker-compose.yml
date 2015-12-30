@@ -1,0 +1,8 @@
+node-mjpeg-streamer:
+  build: ./
+  dockerfile: Dockerfile
+  ports:
+    - "8080:8080"
+
+  devices:
+    - "/dev/video0:/dev/video0"
